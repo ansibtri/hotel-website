@@ -1,0 +1,809 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+@font-face{
+	font-family:Bready;
+	src:url("files/bready-regular.ttf");
+}
+.header{
+	width: 62.9rem;
+	box-sizing: border-box;
+	background-attachment: fixed;
+}
+.logo{
+	width: 13rem;
+	height: 8rem;
+	margin-left: 2.5rem;
+	margin-top: 2rem;
+}
+.call-button, .btn-btn-book{
+	width: 10rem;
+	height: 3rem;
+	top: 6rem;
+	background:transparent;
+	font-size: 1.5rem;
+	position: absolute;
+	border-radius: 30px;
+	border: 1px solid #000;
+}
+.call-button{
+	right: 4rem;
+}
+.btn-btn-book{
+	right:16rem;
+}
+.call-button i, .btn-btn-book i{
+	padding-right: 1rem;
+}
+.call-button:hover i{
+	animation-name: phone;
+	animation-duration: 0.9s;
+	animation-direction: reverse;
+	animation-delay: 0.1s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+@keyframes phone{
+	0%{transform:rotate(0deg);}
+	10%{transform:rotate(10deg);}
+	20%{transform:rotate(-10deg);}
+	30%{transform:rotate(10deg);}
+	40%{transform:rotate(-10deg);}
+	50%{transform:rotate(10deg);}
+	60%{transform:rotate(-10deg);}
+	70%{transform:rotate(10deg);}
+	80%{transform:rotate(-10deg);}
+	90%{transform:rotate(10deg);}
+	100%{transform:rotate(-10deg);}
+}
+.btn-btn-book:hover i{
+	text-stroke: #000;
+	transform:scale(1.1);
+	-webkit-text-stroke:1px #000;
+}
+/*////////Header's logo and two buttons(reserve and call) parts finish here///////////////////////////////////////////*/
+.horizontal-bar{
+	width: inherit;
+	height: 1rem;
+	background-color: green;
+	margin-top: 1rem;
+}
+.navbar{
+	width:inherit;
+	height: 4rem;
+	margin-top: 1rem;
+}
+.ulist-of-navbar{
+	list-style-type: none;
+	float: right;
+	margin-top: 1rem;
+}
+.ulist-of-navbar li{
+	display: inline-block;
+	margin: 0rem 1rem 0rem 1rem;
+}
+.ulist-of-navbar li a{
+	text-decoration: none;
+	color: #000;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1rem;
+	padding-right:1rem;
+	font-size: 1.5rem;
+	font-variant: bold;
+	transition: ease 0.6s;
+}
+.ulist-of-navbar .active{
+	background-color:#000;
+	color: #fff;
+}
+.ulist-of-navbar li:hover a{
+	color: #fff;
+	background-color: #000;
+}
+.bars{
+	float:left;
+	margin-top: 1rem;
+	margin-left: 2rem;
+	transition: ease 0.6s;
+}
+.bars .dropbtn{
+	border:none;
+	position: absolute;
+	height: 1rem;
+	width: 1rem;
+	color:#000;
+	padding-top:0.5rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.bars .dropbtn button i{
+	font-size:20rem;
+}
+.bar-sub-menu{
+	display: none;
+	list-style-type: none;
+	position: relative;
+	width: 16rem;
+	height: 41rem;
+	margin-top: -3.2rem;
+	margin-left: -2rem;
+	padding-left: 1rem;
+	padding-top:1rem;
+	font-size: 1.5rem;
+	background-color:#111111;;
+	border: 1px solid #000;
+}
+.bar-sub-menu input{
+	width: 11rem;
+	height: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	border:none;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.bar-sub-menu button{
+	width: 3rem;
+	height: 2rem;
+	position: absolute;
+	margin-top: 1rem;
+	background-color:#fff;
+	border:none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.bars:hover .bar-sub-menu{
+	display:block;
+}
+.bar-sub-menu li{
+	padding-top: 2rem;
+}
+.bar-sub-menu li a:hover{
+	color:#f1f1f1;
+}
+.bar-sub-menu li a{
+	text-decoration:none;
+	color:#818181;
+	text-indent: 1.5rem;
+	font-size: 25px;
+}
+.bar-sub-menu li a i{
+	color:#818181;
+	padding-right: 1rem;
+}
+.bar-sub-menu li a i:hover{
+	color:#ffffff;
+}
+.bar-sub-menu img{
+	padding-top: 1rem;
+	filter:brightness(100), hue-rotate(60deg);
+}
+/**************************Header finally finish here***************************/
+/*=============================================================================*/
+.container{
+	width: 62.9rem;
+	height: 35rem;
+	background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("images/room1.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 10%;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 1px -10px 20px rgba(0,0,0,0.4);
+}
+.search-queries{
+	position: absolute;
+	width: 56rem;
+	height: 19rem;
+	margin-top: 9rem;
+	margin-left: 4rem;
+}
+.para-line{
+	width: 48rem;
+	margin-top: 5rem;
+	margin-left: 9.2rem;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+}
+.search-form-queries{
+	margin-top: 8rem;
+	margin-left: 8.8rem;
+}
+.search-form-select-queries select, .search-form-date-queries input, .search-form-room-queries input{
+	width: 14rem;
+	border:none;
+	text-indent: 1.9rem;
+	font-size: 19px;
+}
+.search-form-select-queries select{
+	position: absolute;
+	display: block;
+	top: 11.3rem;
+	height: 3rem;
+	margin-left:-3.8rem;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.search-form-date-queries input{
+	position: absolute;
+	top: 11.3rem;
+	left: 19.1rem;
+	height:3rem;
+}
+.search-form-room-queries input{
+	position: absolute;
+	top: 11.3rem;
+	left: 33.11rem;
+	height:3rem; 
+}
+.search-form-room-queries input::placeholder{
+	color: #000;
+}
+.search-form-button-submit-queries button{
+	position: absolute;
+	top: 11.3rem;
+	left: 47.1rem;
+	height:3rem;
+	width: 3rem;
+	border:none;
+	font-size: 20px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+/*The customers query about room details and everything about form queries ends here*/
+/*******************************************************************************/
+/*The Websites welcome the customer here and view the specification of websites from here and reads its details*/
+
+.container-welcome-hotel-about{
+	width:62.9rem;
+	height: 65rem;
+	background-color:#F5F5F5;	
+}
+.container-welcomes{
+	position: absolute;
+	width: 56rem;
+	height: 26rem;
+	margin-top: 9rem;
+	margin-left: 3.3rem;
+	margin-bottom: 1rem;
+	border: 0.1px solid #fff;
+	text-align: center;
+	font-size: 2rem;
+}
+.container-welcomes h2{
+	margin-top: 2rem;
+	letter-spacing: 2px;
+	margin-bottom: 2rem;
+}
+.container-welcomes h1{
+	margin-top: 2rem;
+	color:#8b4513;
+	font-family: Bready;
+	font-size:4rem;
+}
+.container-hotel-info{
+	background-image: url("images/hotelbuilding.jpg");
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-clip: content-box;
+	width: 62.9rem;
+	height: 40rem;
+	margin-top: 40rem;
+	margin-left: 0rem;
+	position: absolute;
+	margin-bottom: 20rem;
+}
+.container-hotel-info p{
+	margin-top: 40rem;
+	padding-top: 4rem;
+	padding-left: 3.3rem;
+	padding-right: 3.3rem;
+	padding-bottom: 2rem;
+	text-align:justify;
+	text-indent: 50px;
+	font-size: 20px;
+	background-clip: padding-box;
+	background-color:#FFFAFA;
+}
+
+/*The websites welcoming parts and its hotels' about lines finish here.*/
+/*******************************************************************************/
+/*The customer's main comfortability and their accomodation lies here.*/
+
+.customer-comfortability-container{
+	width: 62.9rem;
+	height: 50rem;
+	top: 180rem;
+	position: absolute;
+}
+.customer-comfort-accomodation-container{
+	width: 55rem;
+	height: 50rem;
+	margin-top: 1rem;
+	margin-left: 3.4rem;
+	position: absolute;
+}
+.customer-comfort-accomodation-container-heading{
+	width: 30rem;
+	height: 10rem;
+	margin-left: 13rem;
+}
+.customer-comfort-accomodation-container-heading h1{
+	padding-top: 2rem;
+	padding-left: 3.5rem;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.customer-comfort-accomodation-container-heading hr{
+	width: 12rem;
+	margin-left: 10.5rem;
+	margin-top: 1.5rem;
+}
+.customer-comfort-accomodation{
+	width: 56rem;
+	height: 34rem;
+	margin-top: 2rem;
+}
+.rooms-image-dkr img, .rooms-image-dtr img, .rooms-image-ckr img, .rooms-image-ctr img, .rooms-image-str img, .rooms-image-adr img{
+	margin-top: 3rem;
+	margin-left: 1.8rem;
+	filter: brightness(0.7);
+	box-shadow: 0.5px 0.5px 5px 2px #000;
+	animation-name: accomodation;
+	animation-delay: 0.4s;
+	animation-duration: 0.9s;
+	animation-direction: normal;
+	animation-timing-function: linear;
+	animation-iteration-count: 1;
+	width: 15rem;
+	height: 12rem;
+}
+@keyframes accomodation{
+	0%{
+		width: 0rem;
+		height:0rem;
+	}
+	100%{
+		width:15rem;
+		height:12rem;
+	}
+}
+.rooms-image-dtr{
+	position: absolute;
+	top:12rem;
+	margin-left: 19rem;
+}
+.rooms-image-ckr{
+	position: absolute;
+	top:12rem;
+	margin-left: 38rem;
+}
+.rooms-image-ctr{
+	position: absolute;
+	top:27.2rem;
+}
+.rooms-image-str{
+	position: absolute;
+	top: 27.2rem;
+	margin-left: 19rem;
+}
+.rooms-image-adr{
+	position: absolute;
+	top: 27.2rem;
+	margin-left: 38rem;
+}
+.customer-comfort-accomodation span{
+	position: absolute;
+	margin-top: 11rem;
+	color: #fff;
+	font-size: 20px;
+	font-variant: bolder;
+	text-transform: uppercase;
+	align-content: center;
+	padding-left: -1rem;
+}
+.rooms-image-dkr span,.rooms-image-dtr span{
+	margin-left: -13.9rem;
+	position: absolute;
+}
+.rooms-image-ckr span, .rooms-image-ctr span{
+	margin-left: -13.2rem;
+	position: absolute;
+}
+.rooms-image-str span{
+	margin-left: -11rem;
+	position: absolute;
+}
+.rooms-image-adr span{
+	margin-left: -13rem;
+	position: absolute;
+}
+/***********************Accomodation info finish heres***********************/
+/****************************************************************************/
+/*************************Facilites info starts here*************************/
+.customer-facilities-containers{
+	width: 62.9rem;
+	height: 100rem;
+	position: absolute;
+	margin-top:110rem;
+}
+.customer-facilities-heading h1{
+	margin-top: 6rem;
+	margin-left:23rem;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.customer-facilities-heading hr{
+	width: 6rem;
+	margin-left:29rem;
+	margin-top: 1.5rem;
+	margin-bottom: 6rem;
+}
+/***********************health and meeting container**************************/
+.health-container, .meeting-container{
+	width: 62.9rem;
+	height: 30rem;
+	margin-top: 0rem;
+	perspective: 100px
+}
+.health-container img, .meeting-container img{
+	margin-top: 1rem;
+	width: 32rem;
+	height: 23rem;
+	float:right;
+	margin-right: 1rem;
+	box-shadow:2px 1px 8px 1px #5f5f5f;
+	transform: rotateY(-0.4deg);
+}
+.health-explain, .meeting-explain{
+	position: absolute;
+	float: right;
+	margin-top: 3rem;
+	margin-left: 3rem;
+	width: 24rem;
+	height: auto;
+}
+.health-explain h2, .meeting-explain h2{
+	font-size: 34px;
+}
+.health-explain h3, .meeting-explain h3{
+	margin-top: 3px;
+	font-size: 20px;
+}
+.health-explain p, .meeting-explain p{
+	margin-top: 3rem;
+	text-align: justify;
+	font-size: 17px;
+}
+.health-explain .fas, .meeting-explain .fas{
+	padding-top: 2rem;
+	font-size: 3rem;
+	padding-left: 2rem;
+	padding-right: 1rem;
+}
+/**********************************Garden Container*****************************/
+.garden-container{
+	width: 62.9rem;
+	height: 30rem;
+	margin-top: 1rem;
+	perspective: 100px
+}
+.garden-container img{
+	float:left;
+	width: 32rem;
+	height: 23rem;
+	margin-left: 1.5rem;
+	box-shadow:-2px -1px 8px 1px #5f5f5f;
+	transform: rotateY(0.5deg);
+}
+.garden-explain{
+	position: absolute;
+	float: right;
+	margin-top: 3rem;
+	margin-left: 36rem;
+	width: 24rem;
+	height: auto;
+}
+.garden-explain h2{
+	font-size: 34px;
+}
+.garden-explain h3{
+	margin-top: 3px;
+	font-size: 20px;
+}
+.garden-explain p{
+	margin-top: 3rem;
+	text-align: justify;
+	font-size: 17px;	
+}
+.garden-image .fas{
+	padding-top: 1rem;
+	padding-left:1rem;
+	width: 3rem;
+	height: 3rem;
+	fill-text-stroke:black;
+	box-shadow: none;
+}
+.view-more{
+	text-decoration: none;
+	color:#FFDEAD;
+}
+.view-more:hover{
+	text-decoration:underline;
+	font-size: 18px;
+}
+
+/**********************Facilities Description Finish  here**********************/
+/*******************************************************************************/
+
+.review-events-container{
+	width: 62.9rem;
+	height: 50rem;
+	top: 335rem;
+	margin-top: 1rem;
+	font-size: 20px;
+	position: absolute;
+	background-color:rgb(80,0,0);
+}
+.review-heading{
+	width: 30rem;
+	height: 7rem;
+	margin-top: 2rem;
+	margin-left: 4rem;
+	color:white;
+}
+.review-heading h2{
+	padding-top: 2rem;
+	padding-left: 1rem;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.customer-review-container{
+	width: 30rem;
+	height:35rem;
+	margin-top: 1rem;
+	margin-left: 2rem;
+}
+.customer-review{
+	width:30rem;
+	height: 10rem;
+	margin-top: 1rem;
+	border:0.1px solid #fff;
+	background-color: white;
+}
+.customer-review h3{
+	position: absolute;
+	margin-top: -1rem;
+}
+.reviewers-photo{
+	width:3rem;
+	height:3rem;
+	margin-top: 1.5rem;
+	margin-left:2rem;
+	border-radius: 50%;
+}
+.reviewers-detail{
+	position: absolute;
+	width:28rem;
+	margin-top: -2.9rem;
+	margin-left: 7rem;
+}
+.review-detail-date{
+	position: absolute;
+	float:right;
+	font-size: 12px;
+	padding-top: 0.7rem;
+}
+.review-five-star{
+	position: absolute;
+	padding-top: -0.0123rem;
+	padding-left: 14rem;
+	float:right;
+	color: yellow;
+}
+.review-explain{
+	width: 20rem;
+	font-size:15px;
+	padding-top: 2rem;
+	text-align:justify;
+}
+.review-read-more button{
+	text-decoration: none;
+	width: 5rem;
+	height: 1.5rem;
+	float:right;
+	position: absolute;
+	margin-left: 13rem;
+	margin-top: -0.5rem;
+	border-radius: 0px;
+	border:none;
+	background-color: #7770A3
+}
+.review-read-more button:hover{
+	text-decoration: underline;
+}
+/************************The review content finish here*************************/
+/*******************************************************************************/
+/********************The Latest Events Container Starts Here********************/
+.events-container{
+	width: 26rem;
+	height: 35rem;
+	margin-top: -43rem;
+	margin-left: 35rem;
+	color:white;
+	position: absolute;
+}
+.events-heading h2{
+	padding-top: 2rem;
+	padding-left: 1rem;
+	font-size: 45px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+.events-heading img{
+	width:26rem;
+	height: 32.4rem;
+	margin-top: 2.7rem;
+}
+/************************The events container finish here***********************/
+/*=============================================================================*/
+/***********************The News letter section starts here*********************/
+.subscribe-newsletter-form{
+	top: 386rem;
+	width:62.9rem;
+	height: 40rem;
+
+	position: absolute;
+	background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0)),url("images/oriental.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.newsletter-heading{
+	margin-top: 5rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+}
+.news-letter-form{
+	margin-top: 3rem;
+}
+.news-letter-form h2{
+	font-size: 40px;
+	margin-left: 21rem;
+	color: #fff;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+.news-letter-form h3{
+	margin-left: 19rem;
+	color: rgba(0,0,0,0.5);
+}
+.news-letter-email-input{
+	margin-top:3rem;
+	margin-left: 4rem;
+	width: 45rem;
+	height: 4rem;
+	border:none;
+	text-indent: 3rem;
+	font-size:20px;
+	border-top-left-radius:80px; 
+	border-bottom-left-radius: 80px;
+}
+.newsletter-email-submit{
+	width: 9rem;
+	height: 4rem;
+	border:none;
+	font-size:20px;
+	background-color:rgb(100,250,250);
+	color:#fff;
+	margin-left: -0.3rem;
+	border-top-right-radius:80px; 
+	border-bottom-right-radius: 80px;
+}
+/***************************The News Letter form ends here**********************/
+/*=============================================================================*/
+/*The last section i.e. address contact quick links container starts here*/
+.address-contact-quick-links-container{
+	top: 405rem;
+	width: 62.9rem;
+	height: 30rem;
+	position: absolute;
+	background-color: #eef2f5;
+	margin-top: 1rem;
+	margin-bottom: 10rem;
+}
+.address-contact-container{
+	margin-top: 8rem;
+	margin-left: 8rem;
+}
+.address-contact-container h2{
+	margin-left: 14rem;
+	font-size: 40px;
+	text-transform: uppercase;
+}
+.address-contact-container ul{
+	list-style-type: none;
+	margin-top: 2rem;
+}
+.address-contact-container ul li{
+	padding-top: 1.5rem;
+	font-size: 20px;
+}
+.address-contact-container ul li i{
+	padding-right: 1rem;
+}
+.hotels-location{
+	width: 25rem;
+	height: 12.5rem;
+	position: absolute;
+	margin-top: -8rem;
+	margin-left: 24rem;
+	float:right;
+}
+.social-contacts-container{
+	top: 436rem;
+	width: 62.8rem;
+	height:20rem;
+	background-color: #111;;
+	position: absolute;
+	border:1px solid #fff;
+}
+.social-contacts-links{
+	margin-top: 5rem;
+	margin-left: 20rem;
+}
+.social-contacts-links li{
+	float:left;
+	padding-left: 2rem;
+}
+.social-contacts-links li i{
+	color:#fff;
+	font-size: 40px;
+	width:2rem;
+	height: 2rem;
+	padding-top:12px;
+	padding-bottom:18px;
+	padding-left: 22px;
+	padding-right: 18px;
+}
+.social-contacts-links .fa-facebook:hover{
+	color:#3B5998;
+	opacity: 0.9;
+}
+.social-contacts-links .fa-instagram:hover{
+	color: #125688;
+	opacity: 0.9;
+}
+.social-contacts-links .fa-twitter:hover{
+	color: #55ACEE;
+	opacity: 0.9;
+}
+.horizontal-line{
+	margin-top: 10rem;
+	margin-left: 4rem;
+	position: absolute;
+	width: 54rem;
+}
+.final-section{
+	width: 56rem;
+	height: 4rem;
+	margin-top: 11rem;
+	margin-left: 3rem;
+	position: absolute;
+}
+.final-section p{
+	padding-top:1rem;
+	padding-left: 8rem;
+	letter-spacing: 2px;
+	color: #fff;
+}

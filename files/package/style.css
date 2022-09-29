@@ -1,0 +1,233 @@
+*{
+	margin:0rem;
+	padding:0rem;
+}
+.main-div{
+	top: 1rem;
+	margin-top: 1.5rem;
+	width: 58rem;
+	height: 70rem;
+	margin-left: -0.5rem;
+}
+.heading{
+	width:54rem;
+	height: 40rem;
+}
+.heading img{
+	margin-top: 1.5rem;
+	margin-left: 2rem;
+}
+.book-now{
+	margin-top: 4rem;
+	margin-left: 24rem;
+	width: 8rem;
+	height: 3rem;
+	border-radius: 30px;
+	border:none;
+	position: absolute;
+	font-size:18px;
+	background-color:rgb(80,80,255);
+}
+.book-now:hover{
+	opacity:0.9;
+}
+/*The header parts finish here.*/
+.package-hall{
+	margin-top: 0.5rem;
+	width:54rem;
+	height:69rem;
+	margin-left: 2rem;
+	background-color: rgb(242,242,255);
+}
+.package-hall h1{
+	padding-top: 3rem;
+	text-transform: uppercase;
+	padding-left: 18rem;
+	font-size: 4rem;
+	color:#000;
+}
+.package-hall svg{
+	padding-top: 1rem;
+	padding-left: 23.5rem;
+}
+.side-bar{
+	top:1.5rem;
+	right:0.7rem;
+	width:6rem;
+	height: 38.5rem;
+	position:fixed;
+	background-color: rgb(242,242,255);
+	/*background-color: #eef2f5;*/
+}
+.side-bar-ul ul{
+	list-style-type: none;
+	padding-top: 4rem;
+	padding-left: 0.2rem;
+}
+/*.side-bar-ul ul li{
+	margin-top: -3rem;
+	margin-left: 0.5rem;
+	width:5rem;
+	height:3rem;
+	border:none;
+	background-color: rgb(242,242,255)
+}*/
+.side-bar-ul ul li button img{
+	width:4rem;
+	height:3rem;
+}
+.side-bar-ul ul li{
+	padding-top: 3rem;
+}
+.side-bar-ul  ul li a{
+	text-decoration: none;
+	padding-left: 1.1rem;
+	color:#000000;
+	font-size:18px;
+}
+.btn-btn-dropdown{
+	width: 3rem;
+	height: 2rem;
+	position: absolute;
+	margin-top: 2rem;
+	margin-bottom:2rem;
+	margin-left: 1.5rem;
+	background-color:#fff;
+	border:none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+/*.dropdown-content{
+	display:none;
+	position: absolute;
+	width: 16rem;
+	height: 41rem;
+	top: 4rem;
+	right:4rem;
+	margin-left: -2rem;
+	padding-left: 1rem;
+	padding-top:1rem;
+	font-size: 1.5rem;
+	background-color:#111111;;
+	border: 1px solid #000;
+}*/
+.bar-sub-menu{
+	list-style-type: none;
+	display:none;
+	position: relative;
+	width: 16rem;
+	height: 41rem;
+	top: 4rem;
+	right:4rem;
+	margin-left: -2rem;
+	padding-left: 1rem;
+	padding-top:1rem;
+	font-size: 1.5rem;
+	background-color:#111111;;
+	border: 1px solid #000;
+}
+.btn-btn-dropdown:hover .bar-sub-menu{
+	display:block;
+}
+.bar-sub-menu input{
+	width: 11rem;
+	height: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 0.2rem;
+	padding-bottom: 0.2rem;
+	border:none;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+.bar-sub-menu button{
+	width: 3rem;
+	height: 2rem;
+	position: absolute;
+	margin-top: 1rem;
+	background-color:#fff;
+	border:none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+.btn-btn-dropdown img{
+	width: 3rem;
+	height:2rem;
+}
+
+.bar-sub-menu li{
+	padding-top: 2rem;
+}
+.bar-sub-menu li a:hover{
+	color:#f1f1f1;
+}
+.bar-sub-menu li a{
+	text-decoration:none;
+	color:#818181;
+	text-indent: 1.5rem;
+	font-size: 25px;
+}
+.bar-sub-menu li a i{
+	color:#818181;
+	padding-right: 1rem;
+}
+.bar-sub-menu li a i:hover{
+	color:#ffffff;
+}
+.bar-sub-menu li a .active{
+	color: #fff;
+}
+.bar-sub-menu img{
+	padding-top: 1rem;
+	filter:brightness(100), hue-rotate(60deg);
+}
+.item-container{
+	width: 54rem;
+	height: 37rem;
+}
+.item-container ul{
+	list-style-type: none;
+}
+.item-container-images li img{
+	width: 16rem;
+	height: 12rem;
+	padding-top: 2rem;
+	position: absolute;
+}
+.item-container-images li .img1{
+	padding-left: 2rem;
+}
+.item-container-images li .img2{
+	padding-left:31.5rem;
+}
+.item-container-images li .img4{
+	padding-left: 2rem;
+	padding-top:20rem;
+}
+.item-container-images li .img5{
+	padding-left: 31.5rem;
+	padding-top:20rem;
+}
+.package-description{
+	top:60rem;
+	position: absolute;
+	font-size: 20px;
+	width: 50rem;
+	text-align:justify;
+	padding-left: 3rem;
+	padding-right: 6rem;
+}
+.package-description p span{
+	padding-left: 22rem;
+}
+.social-contacts{
+	width:3rem;
+	height:2rem;
+	margin-left: 2rem;
+	margin-top: 0.5rem;
+	position: absolute;
+	top: 20rem;
+}
+.social-contacts-links li{
+	padding-top: 4rem;
+}
